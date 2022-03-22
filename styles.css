@@ -1,0 +1,100 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+}
+
+body{
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    height: auto;
+    max-width: 80%;
+    margin: 15% 5%;
+    background-color: white;
+    border-radius: 1.3rem;
+}
+
+.img-container img{
+    width: 100%;
+    border-top-right-radius: 1.3rem;
+    border-top-left-radius: 1.3rem;
+}
+
+.wrapper2{
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.title{
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.sub-txt{
+    line-height: 2rem;
+    color: var(--Grayish-Blue)
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.avatar img{
+    width: 4.5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.info-txt{
+line-height: 2rem;
+font-size: 1.3rem;
+align-self: flex-end;
+color: var(--Grayish-Blue)
+}
+
+.info-txt span{
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.share{
+    background-color: var(--Grayish-Blue);
+    align-self: center;
+    width: 3.5rem;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
