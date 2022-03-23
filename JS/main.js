@@ -28,7 +28,7 @@ function  setShareLinks() {
 
 
     $(".fb").on("click",function () {
-        url = "https://www.facebook.com/sharer.php?u=calibergaming.in";
+        url = "https://www.facebook.com/sharer.php?u=https://curious-kataifi-97a9bc.netlify.app/";
         socialWindowScreen(url);
     })
     $(".tweet").on("click",function () {
