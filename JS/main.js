@@ -2,11 +2,7 @@ const btn = document.querySelector('.share');
 const avatar = document.querySelector('.info');
 const smContainer = document.querySelector('.sm-container');
 const arrow = document.querySelector('.arrow')
-
-
-/* const fb = document.querySelector('.fb')
-const tweet = document.querySelector('.tweet')
-const pint = document.querySelector('.pint') */
+const btn2 = document.querySelector('.btn2')
 
 setShareLinks();
 
@@ -60,3 +56,8 @@ avatar.classList.remove('hide-info');
 smContainer.classList.add('show-sm');
 gsap.from('.info', { duration: .5, x: '-100%', ease: 'power1'});
     });
+
+    btn2.addEventListener('click',() =>{
+        smContainer.classList.toggle('show-sm');
+    });
+   
