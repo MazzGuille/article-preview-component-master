@@ -32,6 +32,7 @@ body{
     margin: 15% 5%;
     background-color: white;
     border-radius: 1.3rem;
+    position: relative;
 }
 
 .img-container img{
@@ -69,6 +70,8 @@ body{
 }
 
 .info-txt{
+width: 70%;
+padding-left: 1rem;
 line-height: 2rem;
 font-size: 1.3rem;
 align-self: flex-end;
@@ -78,17 +81,25 @@ color: var(--Grayish-Blue)
 .info-txt span{
     font-weight: 700;
     color: var(--Very-Dark-Grayish-Blue);
+    justify-self: left;
 }
 
 .share{
     background-color: var(--Grayish-Blue);
     align-self: center;
     width: 3.5rem;
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 1rem;
-
 }
 
+.share img{
+    width: 1.5rem;
+}
+
+.share:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 
 .attribution {
   font-size: 11px;
@@ -98,3 +109,68 @@ color: var(--Grayish-Blue)
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* -----hide avatar---- */
+.hide-info{
+    display: none;
+}
+
+/* -----active state---- */
+
+.sm-container{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 100%;
+    height: 10vh;
+    border-bottom-left-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;    
+}
+
+/* -----show sm---- */
+
+.show-sm{
+    display: none;
+}
+
+.sm-container p{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .3rem;
+    color: var(--Grayish-Blue);
+}
+
+.sm-icons{
+    width: 60%;
+}
+
+.sm-icons img{
+    margin: .5rem;
+}
+
+.sm-icons img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.arrow{
+    background-color: var(--Grayish-Blue);
+    align-self: center;
+    width: 3.5rem;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.arrow img{
+    width: 1.5rem;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+

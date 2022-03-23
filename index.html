@@ -7,7 +7,8 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="./JS/scrollreveal.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script defer src="./JS/main.js"></script>
 </head>
 
@@ -15,7 +16,7 @@
 
   <div class="wrapper">
     <div class="img-container">
-      <img src="images/drawers.jpg" alt="">
+      <img class="pintimg" src="images/drawers.jpg" alt="">
     </div>
     <div class="wrapper2">
       <div class="txt">
@@ -37,8 +38,10 @@
           complete.
         </p>
       </div>
-      <div class="info hide-info">
-        <div class="avatar"><img src="images/avatar-michelle.jpg" alt=""></div>
+      <div class="info">
+        <div class="avatar">
+          <img src="images/avatar-michelle.jpg" alt="">
+        </div>
         <div class="info-txt">
           <span>Michelle Appleton</span>
           <br>
@@ -47,19 +50,19 @@
         <div class="share">
           <img src="images/icon-share.svg" alt="">
         </div>
+      </div>     
+    </div>
+    <div class="sm-container show-sm">
+      <p>
+        Share
+      </p>
+      <div class="sm-icons">
+        <img class="fb" src="images/icon-facebook.svg" alt="">
+        <img class="tweet" src="images/icon-twitter.svg" alt="">
+        <img class="pint" src="images/icon-pinterest.svg" alt="">
       </div>
-      <div class="sm-container show-sm">
-        <p>
-          Share
-        </p>
-        <div class="sm-icons">
-          <img src="images/icon-facebook.svg" alt="">
-          <img src="images/icon-twitter.svg" alt="">
-          <img src="images/icon-pinterest.svg" alt="">
-          <div class="arrow">
-            <img src="images/icon-share.svg" alt="">
-          </div>
-        </div>
+      <div class="arrow">
+        <img src="images/icon-share.svg" alt="">
       </div>
     </div>
   </div>
