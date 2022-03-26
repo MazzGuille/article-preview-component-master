@@ -41,7 +41,7 @@ function  setShareLinks() {
 const tl = gsap.timeline()
 tl
 .from('.img-container', {duration: '1.5', opacity: 0})
-.from('.wrapper2',{duration: '1', y: '-100%', opacity: 0, ease: 'bounce'
+.from('.wrapper2',{duration: '2', y: '-100%', opacity: 0, ease: 'bounce'
 });
 
 btn.addEventListener('click', () =>{
